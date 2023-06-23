@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {ApolloClient, InMemoryCache, ApolloProvider} from "@apollo/client";
+import {GraphQLWsLink} from "@apollo/client/link/subscriptions";
+import {createClient} from "graphql-ws";
 
 // const client = new ApolloClient({
 //     uri: "https://71z1g.sse.codesandbox.io/",    //uri указывает URL-адрес нашего сервера GraphQL
